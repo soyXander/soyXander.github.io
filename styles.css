@@ -8,3 +8,24 @@
     width: 180px;
     height: auto;
 }
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    & ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        & a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+                color: #aaa;
+            }
+        }
+    }
