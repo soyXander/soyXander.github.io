@@ -29,6 +29,23 @@ body {
     & .menu {
         display: flex;
         align-items: center;
+        column-gap: 16px;
+    
+        & ul {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+    
+            & a {
+                text-decoration: none;
+                color: #dac5a7;
+                text-transform: uppercase;
+    
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                }
+            }
         }
     }
 
