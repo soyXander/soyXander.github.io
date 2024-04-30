@@ -1,8 +1,27 @@
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url(./assets/Satoshi-Light.woff);
+}
+
+@font-face {
+    font-family: 'Gambetta-LightItalic';
+    src: url(./assets/Gambetta-LightItalic.woff);
+}
+
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url(./assets/Comfortaa-Light.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Satoshi-Light', sans-serif;
     background-color: #0e0e0e;
+
+    & h1, h2, h3 {
+        margin: 0;
+    }
 }
 
 .header {
@@ -49,30 +68,78 @@ body {
         }
     }
 
-}
+    & .boton {
+        width: 110px;
+        height: 40px;
+        font-size: 13px;
 
-.logo {
-    width: 180px;
-    height: auto;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
-    & ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-
-        & a {
-            text-decoration: none;
-            color: #000;
-
-            &:hover {
-                text-decoration: underline;
-                color: #aaa;
-            }
+        padding: 10px 16px;
+        color: #0E0E0E;
+        text-transform: uppercase;
+        border-radius: 2px;
+        border-style: none;
+        background-color: #dac5a7;
+    
+        &:hover {
+            background-color: #d8c8b2;
         }
     }
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    color: #dac5a7;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 10%;
+
+    & h1 {
+        font-size: 140px;
+        font-family: 'Gambetta-LightItalic';
+        font-weight: 400;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    & h3 {
+        font-size: 16px;
+        font-family: 'Comfortaa-Light';
+        font-weight: 200;
+        line-height: 33px;
+        text-align: center;
+        width: 660px;
+        text-wrap: pretty;
+        padding-bottom: 32px;
+    }
+    
+    & span {
+        font-family: 'Satoshi-Light';
+        font-size: 100px;
+        font-weight: 400;
+    }
+    
+    & .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url(./assets/xander.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.4;
+    }
+}
