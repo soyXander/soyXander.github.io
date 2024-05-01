@@ -18,9 +18,36 @@ body {
     padding: 0;
     font-family: 'Satoshi-Light', sans-serif;
     background-color: #0e0e0e;
+    color: #dac5a7;
 
     & h1, h2, h3 {
         margin: 0;
+    }
+
+    & h1, h2 {
+        font-family: 'Gambetta-LightItalic', sans-serif;
+    }
+
+    & h2 {
+        font-size: 45px;
+    }
+
+    & span {
+        font-family: 'Satoshi-Light', sans-serif;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 33px;
+        text-align: center;
+        width: 1024px;
+        text-wrap: pretty;
+
+        background-color: #ffffff12;
+        border: #dac5a726 1px solid;
+        border-radius: 2px;
+        padding: 48px;
     }
 }
 
@@ -86,7 +113,6 @@ body {
     }
 }
 
-
 .main {
     display: flex;
     flex-direction: column;
@@ -102,31 +128,28 @@ body {
     color: #dac5a7;
     width: 100%;
     height: 100vh;
-    padding-bottom: 10%;
 
     & h1 {
         font-size: 140px;
-        font-family: 'Gambetta-LightItalic';
         font-weight: 400;
         line-height: 80px;
         text-align: center;
+
+    }
+
+    & span {
+        font-size: 100px;
+        font-weight: 400;
     }
 
     & h3 {
-        font-size: 16px;
-        font-family: 'Comfortaa-Light';
+        font-size: 18px;
         font-weight: 200;
         line-height: 33px;
         text-align: center;
-        width: 660px;
+        width: 512px;
         text-wrap: pretty;
         padding-bottom: 32px;
-    }
-    
-    & span {
-        font-family: 'Satoshi-Light';
-        font-size: 100px;
-        font-weight: 400;
     }
     
     & .hero-background {
