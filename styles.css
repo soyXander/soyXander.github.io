@@ -36,18 +36,19 @@ body {
         font-family: 'Satoshi-Light', sans-serif;
     }
 
-    p {
+    & p {
         font-size: 18px;
         font-weight: 200;
         line-height: 33px;
         text-align: center;
         width: 1024px;
         text-wrap: pretty;
+    }
 
+    & .contenedor {
         background-color: #ffffff12;
         border: #dac5a726 1px solid;
         border-radius: 2px;
-        padding: 48px;
     }
 }
 
@@ -119,6 +120,14 @@ body {
     justify-content: center;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -167,13 +176,6 @@ body {
     }
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 60px;
-    padding-top: 80px;
-}
 .sobre-mi {
     color: #dac5a7;
     gap: 20px;
