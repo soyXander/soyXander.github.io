@@ -166,3 +166,16 @@ body {
         opacity: 0.4;
     }
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 80px;
+}
+.sobre-mi {
+    color: #dac5a7;
+    gap: 20px;
+}
+
