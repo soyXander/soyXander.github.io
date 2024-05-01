@@ -20,20 +20,16 @@ body {
     background-color: #0e0e0e;
     color: #dac5a7;
 
-    & h1, h2, h3 {
+    & h1, h2, h3, h4, p {
         margin: 0;
-    }
-
-    & h1, h2 {
-        font-family: 'Gambetta-LightItalic', sans-serif;
     }
 
     & h2 {
         font-size: 45px;
     }
 
-    & span {
-        font-family: 'Satoshi-Light', sans-serif;
+    & h4, span {
+        font-family: 'Gambetta-LightItalic', sans-serif;
     }
 
     & p {
@@ -41,7 +37,6 @@ body {
         font-weight: 200;
         line-height: 33px;
         text-align: center;
-        width: 1024px;
         text-wrap: pretty;
     }
 
@@ -72,6 +67,7 @@ body {
     & .logo {
         width: 120px;
     }
+    z-index: 10;
 
     & .menu {
         display: flex;
@@ -137,6 +133,7 @@ section {
     color: #dac5a7;
     width: 100%;
     height: 100vh;
+    padding-top: 0;
 
     & h1 {
         font-size: 140px;
@@ -179,5 +176,102 @@ section {
 .sobre-mi {
     color: #dac5a7;
     gap: 20px;
+
+    & p {
+        padding: 48px;
+        width: 1024px;
+    }
 }
 
+.proyectos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 2fr));
+    gap: 20px;
+    padding: 24px;
+}
+
+.proyecto {
+    position: relative;
+    width: 512px;
+    height: 400px;
+
+    &.contenedor {
+        background-color: transparent;
+    }
+
+    & .proyecto-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    & .proyecto-1 {
+        background-image: url(./assets/proyectos/1.webp);
+    }
+
+    & .proyecto-2 {
+        background-image: url(./assets/proyectos/2.webp);
+    }
+
+    & .proyecto-3 {
+        background-image: url(./assets/proyectos/3.webp);
+    }
+
+    & .proyecto-4 {
+        background-image: url(./assets/proyectos/4.webp);
+    }
+
+    & .proyecto-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.5s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        & h4 {
+            & a {
+                font-size: 24px;
+                text-decoration: none;
+                color: #dac5a7;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                }
+            }
+        }
+    
+        & p {
+            text-align: center;
+            padding-inline: 24px;
+        }
+
+        & ul {
+            display: flex;
+            gap: 8px;
+            padding-bottom: 24px;
+
+            & li {
+                list-style: none;
+                border: 1px solid #dac5a7;
+                border-radius: 2px;
+                padding: 4px 8px;
+                pointer-events: none;
+            }
+        }
+    }
+}
