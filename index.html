@@ -16,7 +16,7 @@
                 <li><a href="#sobre-mi">Sobre mi</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
             </ul>
-            <button class="boton">Hablemos</button>
+            <a class="boton" href="#contacto"">Hablemos</a>
         </nav>
     </div>
     <main class="main">
@@ -40,12 +40,12 @@
         <section class="proyectos" id="proyectos">
             <h2>Proyectos <span>activos</span></h2>
             <h3>En este apartado, verás algunos de los proyectos en los que estoy trabajando.</h3>
-            <div class="proyectos-contenedor">
+            <ol>
                 <article class="proyecto contenedor">
-                    <div class="proyecto-background proyecto-1"></div>
+                    <div class="background proyecto-1"></div>
                     <div class="proyecto-info">
                         <h4>
-                            <a href="https://moisesjabif.com" target="_blank">Moises Jabif</a>
+                            <a href="https://moisesjabif.com" target="_blank"><li>- Moises Jabif</li></a>
                         </h4>
                         <p>Plataforma de venta de entrenamientos y asesoramiento fitness online.</p>
                         <ul>
@@ -56,12 +56,12 @@
                         </ul>
                     </div>
                 </article>
-                
+
                 <article class="proyecto contenedor">
-                    <div class="proyecto-background proyecto-2"></div>
+                    <div class="background proyecto-2"></div>
                     <div class="proyecto-info">
                         <h4>
-                            <a href="https://luani.com.ar" target="_blank">Luani</a>
+                            <a href="https://luani.com.ar" target="_blank"><li>- Luani</li></a>
                         </h4>
                         <p>Ecommerce de indumentaria femenina, con presencia en Argentina.</p>
                         <ul>
@@ -72,12 +72,12 @@
                         </ul>
                     </div>
                 </article>
-                
+
                 <article class="proyecto contenedor">
-                    <div class="proyecto-background proyecto-3"></div>
+                    <div class="background proyecto-3"></div>
                     <div class="proyecto-info">
                         <h4>
-                            <a href="https://gosensrl.com.ar" target="_blank">Gosén - Cabañas y Suites</a>
+                            <a href="https://gosensrl.com.ar" target="_blank"><li>- Gosén - Cabañas y Suites</li></a>
                         </h4>
                         <p>Web de las cabañas Gosén ubicadas en Sanagasta y suites en la Capital de La Rioja, Argentina.</p>
                         <ul>
@@ -86,13 +86,13 @@
                         </ul>
                     </div>
                 </article>
-                
+
                 <article class="proyecto contenedor">
-                    <div class="proyecto-background proyecto-4">
+                    <div class="background proyecto-4">
                     </div>
                     <div class="proyecto-info">
                         <h4>
-                            <a href="#">Edelvez Project</a>
+                            <a href="#"><li>- Edelvez Project</li></a>
                         </h4>
                         <p>Fork de L2jServer que fue codeado en Java para emular servidor del juego Lineage 2.</p>
                         <ul>
@@ -102,8 +102,32 @@
                         </ul>
                     </div>
                 </article>
-            </div>
+            </ol>
         </section>
     </main>
+
+    <footer id="contacto">
+        <div class="info">
+            <img class="logo" src="./assets/logo.svg" alt="Logo">
+            <p>Hecho con ❤️, un par de 🍔 y un montón de código 💻.
+            <br>Si encontrás un bug, problablemente solo sea un feature 🫠(?) </p>
+        </div>
+        <div class="contacto">
+            <div class="contenedor">
+                <a href="https://soyxander-cv.vercel.app" target="_blank">
+                    <img src="./assets/iconos/CV.svg" alt="Github">
+                    Mi CV
+                </a>
+                <div class="contenedor background"></div>
+            </div>
+            <div class="contenedor">
+                <a href="mailto:zn.xander@gmail.com" target="_blank">
+                    <img src="./assets/iconos/Email.svg" alt="Email">
+                    zn.xander@gmail.com
+                </a>
+                <div class="contenedor background"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
