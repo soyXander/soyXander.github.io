@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Satoshi-Light';
-    src: url(./assets/Satoshi-Light.woff);
+    src: url(./assets/fuentes/Satoshi-Light.woff);
 }
 
 @font-face {
     font-family: 'Gambetta-LightItalic';
-    src: url(./assets/Gambetta-LightItalic.woff);
+    src: url(./assets/fuentes/Gambetta-LightItalic.woff);
 }
 
 @font-face {
     font-family: 'Comfortaa-Light';
-    src: url(./assets/Comfortaa-Light.ttf);
+    src: url(./assets/fuentes/Comfortaa-Light.ttf);
 }
 
 body {
