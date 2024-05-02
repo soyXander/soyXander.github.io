@@ -299,6 +299,7 @@ section {
 
 footer {
     display: grid;
+    justify-content: space-around;
     align-items: center;
     grid-template-columns: repeat(2, minmax(512px, 1fr));
     min-width: 1280px;
@@ -306,7 +307,6 @@ footer {
     margin-top: 50px;
     background-color: #dac5a70d;
     border-top: #dac5a726 1px solid;
-
 
     & .contenedor {
         position: relative;
@@ -371,20 +371,12 @@ footer {
         transition: transform 0.5s ease-in-out;
     }
 
-    & .contacto {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        column-gap: 22px;
-        padding-inline: 55px;
-    }
-
     & .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 12px;
-        padding-inline: 55px;
+        padding-inline-start: 250px;
 
         & .logo {
             width: 160px;
@@ -393,5 +385,13 @@ footer {
         & p {
             text-align: left;
         }
+    }
+
+    & .contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 22px;
+        padding-inline-end: 250px;
     }
 }
